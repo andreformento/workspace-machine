@@ -1,9 +1,13 @@
 # workspace-machine
 My local machine everywhere (using just Docker)
 
-### Instaled tools
+### Installed tools
 - git
 - vim
+
+#### Future
+- Java 9
+- Clojure
 
 ### Build
 
