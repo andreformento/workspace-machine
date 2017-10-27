@@ -16,5 +16,5 @@ docker run \
        -it -P \
        -v $(pwd):/home \
        -e USERID=$UID \
-       ubuntu /bin/bash
+       andreformento/workspace-machine /bin/bash
 ```
