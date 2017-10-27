@@ -1,6 +1,10 @@
 # workspace-machine
 My local machine everywhere (using just Docker)
 
+### Instaled tools
+- git
+- vim
+
 ### Build
 
 ```
