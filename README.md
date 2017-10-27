@@ -9,13 +9,16 @@ My local machine everywhere (using just Docker)
 - Java 9
 - Clojure
 
-### Build
+
+### Docker
+
+#### Build
 
 ```
 docker build -t andreformento/workspace-machine .
 ```
 
-### Run and attach
+#### Run and attach
 
 The order is -> `host:container`
 
