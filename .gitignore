@@ -1,2 +1,4 @@
 ws/
 !ws/.keep
+ssh/
+!ssh/.keep
