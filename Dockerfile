@@ -10,5 +10,7 @@ RUN apt-get update && apt-get install -y \
     
 ADD init.sh /
 RUN /init.sh
+
+ENV SHELL /bin/zsh
     
 WORKDIR /root/ws
