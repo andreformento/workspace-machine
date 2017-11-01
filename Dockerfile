@@ -3,7 +3,11 @@ LABEL maintainer="andreformento.sc@gmail.com"
 
 RUN apt-get update && apt-get install -y \
     git \
-    vim
+    vim \
+    curl \
+    zsh \
+    chsh -s $(which zsh) \
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 RUN export WS="$HOME/ws" && \
     mkdir -p $WS && \
