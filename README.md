@@ -29,7 +29,7 @@ My local machine everywhere (using just Docker)
 
 ### How to use
 
-After run `./build.sh`, inside the docker, run:
+After run `./build.sh` and `./start.sh`, inside the docker, run:
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "andreformento.sc@gmail.com"
