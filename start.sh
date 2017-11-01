@@ -4,6 +4,6 @@
 
 docker run \
        -it \
-       -v $(pwd)/ws:/home/ws \
+       -v $(pwd)/ws:/root/ws \
        -e USERID=$UID \
        andreformento/workspace-machine /bin/bash
