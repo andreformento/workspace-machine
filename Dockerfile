@@ -5,8 +5,8 @@ RUN apt-get update && apt-get install -y \
     git \
     vim \
     curl \
-    zsh \
-    chsh -s $(which zsh) \
+    zsh && \
+    chsh -s $(which zsh) && \
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 RUN export WS="$HOME/ws" && \
