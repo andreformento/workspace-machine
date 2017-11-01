@@ -1,4 +1,4 @@
-ws/
-!ws/.keep
+dev/
+!dev/.keep
 ssh/
 !ssh/.keep
