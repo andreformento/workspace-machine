@@ -15,13 +15,13 @@ My local machine everywhere (using just Docker)
 
 ### Docker
 
-#### Build
+#### Build image
 
 ```bash
 ./build.sh
 ```
 
-#### Run and attach
+#### Run and attach the container
 
 ```bash
 ./start.sh
