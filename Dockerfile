@@ -6,8 +6,7 @@ RUN apt-get update && apt-get install -y \
     vim \
     curl \
     zsh && \
-    chsh -s $(which zsh) && \
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    chsh -s $(which zsh)
     
 ADD init.sh ~/
 RUN ./init.sh && rm init.sh
