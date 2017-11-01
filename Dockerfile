@@ -8,8 +8,8 @@ RUN apt-get update && apt-get install -y \
     zsh && \
     chsh -s $(which zsh)
     
-ADD init.sh ~/
-RUN ~/init.sh
+ADD init.sh /
+RUN /init.sh
 
 RUN export WS="$HOME/ws" && \
     mkdir -p $WS && \
