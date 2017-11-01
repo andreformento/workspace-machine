@@ -23,12 +23,6 @@ docker build -t andreformento/workspace-machine .
 
 #### Run and attach
 
-The order is -> `host:container`
-
 ```
-docker run \
-       -it -P \
-       -v $(pwd)/ws:/home/ws \
-       -e USERID=$UID \
-       andreformento/workspace-machine /bin/bash
+./start
 ```
