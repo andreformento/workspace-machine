@@ -4,8 +4,8 @@ mkdir ~/init
 cd ~/init
 
 ################################### 
-export WS="$HOME/ws" && \
-mkdir -p $WS && \
+export DEV="$HOME/dev" && \
+mkdir -p $DEV && \
 mkdir -p $HOME/.ssh && \
 git config --global user.name "andreformento" && \
 git config --global user.email "andreformento.sc@gmail.com" && \
