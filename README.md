@@ -35,3 +35,5 @@ After run `./build.sh` and `./start.sh`, inside the docker, run:
 ssh-keygen -t rsa -b 4096 -C "andreformento.sc@gmail.com" -f ~/.ssh/id_rsa -q -P ""
 cat ~/.ssh/id_rsa.pub
 ```
+
+And go to the [Github](https://github.com/settings/keys) and add a new key.
