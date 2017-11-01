@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     chsh -s $(which zsh)
     
 ADD init.sh ~/
-RUN ./init.sh && rm init.sh
+RUN ~/init.sh
 
 RUN export WS="$HOME/ws" && \
     mkdir -p $WS && \
