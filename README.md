@@ -26,3 +26,11 @@ My local machine everywhere (using just Docker)
 ```bash
 ./start.sh
 ```
+
+### How to use
+
+After run `./build.sh`, inside the docker, run:
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "andreformento.sc@gmail.com"
+```
