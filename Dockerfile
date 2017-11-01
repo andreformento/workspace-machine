@@ -3,8 +3,7 @@ LABEL maintainer="andreformento.sc@gmail.com"
 
 RUN apt-get update && apt-get install -y \
     git \
-    vim \
-    xclip
+    vim
 
 RUN export WS="$HOME/ws" && \
     mkdir -p $WS && \
