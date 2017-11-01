@@ -13,4 +13,4 @@ RUN /init.sh
 
 ENV SHELL /bin/zsh
     
-WORKDIR /root/ws
+WORKDIR /root/dev
