@@ -18,7 +18,7 @@ My local machine everywhere (using just Docker)
 #### Build
 
 ```bash
-docker build -t andreformento/workspace-machine .
+./build.sh
 ```
 
 #### Run and attach
