@@ -7,4 +7,4 @@ docker run \
        -v $(pwd)/ws:/root/ws \
        -v $(pwd)/ssh:/root/.ssh \
        -e USERID=$UID \
-       andreformento/workspace-machine /bin/bash
+       andreformento/workspace-machine /bin/zsh
