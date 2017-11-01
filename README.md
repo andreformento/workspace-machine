@@ -28,7 +28,7 @@ The order is -> `host:container`
 ```
 docker run \
        -it -P \
-       -v $(pwd):/home \
+       -v $(pwd):/home/ws \
        -e USERID=$UID \
        andreformento/workspace-machine /bin/bash
 ```
