@@ -5,8 +5,9 @@ RUN apt-get update && apt-get install -y \
     git \
     vim
 
-RUN mkdir /home/ws && \
+RUN export WS="/root/ws" && \
+    mkdir -p $WS && \
     git config --global user.name "andreformento" && \
     git config --global user.email "andreformento.sc@gmail.com"
     
-WORKDIR /home/ws
+WORKDIR /root/ws
