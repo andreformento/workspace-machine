@@ -32,5 +32,6 @@ My local machine everywhere (using just Docker)
 After run `./build.sh` and `./start.sh`, inside the docker, run:
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "andreformento.sc@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "andreformento.sc@gmail.com" -f ~/.ssh/id_rsa -q -P ""
+cat ~/.ssh/id_rsa.pub
 ```
