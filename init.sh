@@ -18,5 +18,6 @@ chmod u+x -R linux-local-configs
 cd linux-local-configs
 ./init.sh
 cd ..
+rm -rf linux-local-configs
 
 echo "ok"
