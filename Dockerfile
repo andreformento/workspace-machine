@@ -9,7 +9,9 @@ RUN apt-get update && apt-get install -y \
     chsh -s $(which zsh)
     
 #RUN apt-get remove --purge -y $BUILD_PACKAGES $(apt-mark showauto)
-RUN rm -rf /var/lib/apt/lists/*
+RUN rm -rf /var/lib/apt/lists/* && \
+    apt autoremove -y && \
+    apt autoclean -y
 
 ADD init.sh /
 RUN /init.sh
