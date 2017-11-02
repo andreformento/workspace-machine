@@ -3,7 +3,7 @@
 # The order is -> `host:container`
 
 docker run \
-       -it \
+       -it -rm \
        -v $(pwd)/dev:/root/dev \
        -v $(pwd)/ssh:/root/.ssh \
        -e USERID=$UID \
