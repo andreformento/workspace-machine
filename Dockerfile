@@ -14,7 +14,7 @@ RUN export DEV="$HOME/dev" && \
     git config --global user.name "andreformento" && \
     git config --global user.email "andreformento.sc@gmail.com" && \
     git config --global push.default simple && \
-    rm ~/.ssh/known_hosts && \
+    rm -rf ~/.ssh/known_hosts && \
     ssh-keyscan -H github.com >> ~/.ssh/known_hosts && \
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" && \
     #sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd && \
