@@ -14,8 +14,10 @@ sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd
 
 # Customize my terminal
 
-curl -fsSL https://raw.github.com/andreformento/linux-local-configs/master/agnoster.zsh-theme
-chmod u+x agnoster.zsh-theme
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/andreformento/linux-local-configs/master/init.sh)"
+git clone https://github.com/andreformento/linux-local-configs.git
+chmod u+x -R linux-local-configs
+cd linux-local-configs
+./init.sh
+cd ..
 
 echo "ok"
