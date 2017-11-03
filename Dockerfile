@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     zsh && \
     chsh -s $(which zsh) && \
+    tmux && \
     rm -rf /var/lib/apt/lists/*
 
 ADD init.sh /
