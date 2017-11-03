@@ -10,9 +10,9 @@ RUN apt-get update && apt-get install -y \
     tmux && \
     rm -rf /var/lib/apt/lists/*
 
+ENV SHELL /bin/zsh
+
 ADD init.sh /
 RUN /init.sh
-    
-ENV SHELL /bin/zsh
-    
+
 WORKDIR /root/dev
