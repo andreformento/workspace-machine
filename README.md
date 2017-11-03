@@ -37,3 +37,6 @@ cat ~/.ssh/id_rsa.pub
 ```
 
 And go to the [Github](https://github.com/settings/keys) and add a new key.
+
+### References
+- http://fideloper.com/mac-vim-tmux
