@@ -14,7 +14,7 @@ sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd
 
 # Customize my terminal
 git clone https://github.com/andreformento/linux-local-configs.git ~/linux-local-configs
-chmod u+x -R ~/linux-local-configs
+#chmod u+x -R ~/linux-local-configs
 cd ~/linux-local-configs
 ./init.sh
 
