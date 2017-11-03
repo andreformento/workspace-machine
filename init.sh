@@ -20,4 +20,7 @@ cd linux-local-configs
 cd ..
 rm -rf linux-local-configs
 
+# tmux
+apt install -y tmux
+
 echo "ok"
