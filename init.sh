@@ -23,7 +23,7 @@ rm -rf linux-local-configs
 # tmux
 apt install -y tmux
 
-echo "123" >> file.txt
 echo '[[ $TERM != "screen" ]] && exec tmux' >> ~/.zshrc
+echo 'source ~/linux-local-configs/custom.sh' >> ~/.zshrc
 
 echo "ok"
