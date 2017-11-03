@@ -23,4 +23,7 @@ rm -rf linux-local-configs
 # tmux
 apt install -y tmux
 
+echo "123" >> file.txt
+echo '[[ $TERM != "screen" ]] && exec tmux' >> ~/.zshrc
+
 echo "ok"
