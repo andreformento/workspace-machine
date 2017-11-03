@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
 ENV SHELL /bin/zsh
 
 ADD init.sh /
+ADD .tmux.conf ~
 RUN /init.sh
 
 RUN tmux && \
