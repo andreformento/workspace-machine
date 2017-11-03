@@ -14,7 +14,7 @@ ADD init.sh /
 ADD .tmux.conf ~
 RUN /init.sh
 
-RUN tmux && \
-    rm -rf /var/lib/apt/lists/*
+# clear
+RUN rm -rf /var/lib/apt/lists/*
 
 WORKDIR /root/dev
