@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 export DEV="$HOME/dev"
 mkdir -p $DEV
@@ -21,7 +21,10 @@ cd ~/linux-local-configs
 # tmux
 apt install -y tmux
 
-echo '[[ $TERM != "screen" ]] && exec tmux' >> ~/.zshrc
-echo 'source ~/linux-local-configs/custom.sh' >> ~/.zshrc
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh" && exec "$@"
+
+#echo '[[ $TERM != "screen" ]] && exec tmux' >> ~/.zshrc
+#echo 'source ~/linux-local-configs/custom.sh' >> ~/.zshrc
+#echo 'source ~/.sdkman/bin/sdkman-init.sh' >> ~/.zshrc
 
 echo "ok"
