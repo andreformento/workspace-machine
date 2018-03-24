@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
 ENV SDKMAN_DIR /usr/local/sdkman
 ENV SHELL /bin/zsh
 ENV SDKMAN_CUSTOM /usr/local/sdkman
+ENV SCRIPTS = /scripts
 
 RUN curl -s get.sdkman.io | bash
 RUN set -x \
@@ -19,11 +20,14 @@ RUN set -x \
     && echo "sdkman_auto_selfupdate=false" >> $SDKMAN_DIR/etc/config \
     && echo "sdkman_insecure_ssl=false" >> $SDKMAN_DIR/etc/config
 
-ADD init.sh /
-ADD .tmux.conf ~
-RUN /init.sh
+ENV HOME /home
+ENV DEV $HOME/dev
+
+ADD dev/ $DEV/
+ADD scripts/ $HOME/scripts/
+ADD ssh/ $HOME/.ssh/
+WORKDIR $DEV
+RUN $HOME/scripts/init.sh
 
 # clear
 RUN rm -rf /var/lib/apt/lists/*
-
-WORKDIR /root/dev

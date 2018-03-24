@@ -9,27 +9,18 @@ My local machine everywhere (using just Docker)
 - vim
 
 #### Future
-- Java 9
+- Java 10
 - Clojure
-
-
-### Docker
-
-#### Build image
-
-```bash
-./build.sh
-```
-
-#### Run and attach the container
-
-```bash
-./start.sh
-```
 
 ### How to use
 
-After run `./build.sh` and `./start.sh`, inside the docker, run:
+#### Build your own image _(optional)_:
+You can build an image with `docker-compose build`.
+It is optional because if you do not build you will use a ready image hosted
+at [dockerhub](https://hub.docker.com/r/andreformento/workspace-machine).
+
+#### Run an have fun
+You can just run `docker-compose up` at host and, inside the docker, run:
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "andreformento.sc@gmail.com" -f ~/.ssh/id_rsa -q -P ""
