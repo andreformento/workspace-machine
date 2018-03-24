@@ -7,9 +7,9 @@ services:
     image: andreformento/workspace-machine:latest
     stdin_open: true # This corresponds to -i in docker run
     tty: true # and this to -t
-    #volumes: # The order is -> `host:container`
-    #  - ./dev:/home/dev
-    #  - ./ssh:/home/.ssh
-    #environment:
-    #  USERID: $UID
+    volumes: # The order is -> `host:container`
+      - ./dev:/home/dev
+      - ./ssh:/home/.ssh
+    environment:
+      USERID: $UID
     entrypoint: /bin/zsh

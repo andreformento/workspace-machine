@@ -20,7 +20,7 @@ It is optional because if you do not build you will use a ready image hosted
 at [dockerhub](https://hub.docker.com/r/andreformento/workspace-machine).
 
 #### Run an have fun
-You can just run `docker-compose up` at host and, inside the docker, run:
+You can just run `./start.sh` at host and, inside the docker, run:
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "andreformento.sc@gmail.com" -f ~/.ssh/id_rsa -q -P ""
