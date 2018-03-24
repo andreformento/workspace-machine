@@ -10,6 +10,4 @@ services:
     volumes: # The order is -> `host:container`
       - ./dev:/home/dev
       - ./ssh:/home/.ssh
-    environment:
-      USERID: $UID
     entrypoint: /bin/zsh
