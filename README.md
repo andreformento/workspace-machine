@@ -23,8 +23,8 @@ at [dockerhub](https://hub.docker.com/r/andreformento/workspace-machine).
 You can just run `./start.sh` at host and, inside the docker, run:
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "andreformento.sc@gmail.com" -f ~/.ssh/id_rsa -q -P ""
-cat ~/.ssh/id_rsa.pub
+ssh-keygen -t rsa -b 4096 -C "andreformento.sc@gmail.com" -f /root/.ssh/id_rsa -q -P ""
+cat /root/.ssh/id_rsa.pub
 ```
 
 And go to the [Github](https://github.com/settings/keys) and add a new key.
