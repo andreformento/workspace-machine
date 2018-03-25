@@ -9,5 +9,5 @@ services:
     tty: true # and this to -t
     volumes: # The order is -> `host:container`
       - ./dev:/home/dev
-      - ./ssh:/home/.ssh
+      - ./ssh:/root/.ssh
     entrypoint: /bin/zsh
