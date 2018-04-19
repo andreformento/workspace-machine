@@ -7,10 +7,7 @@ My local machine everywhere (using just Docker)
 
 - git
 - vim
-
-#### Future
-- Java 10
-- Clojure
+- haskell
 
 ### How to use
 

@@ -6,7 +6,9 @@ RUN apt-get update && apt-get install -y \
     vim \
     curl \
     zip \
-    zsh && \
+    zsh \
+    haskell-platform \
+    && \
     chsh -s $(which zsh)
 
 ENV SDKMAN_DIR /usr/local/sdkman
