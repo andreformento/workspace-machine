@@ -8,6 +8,7 @@ My local machine everywhere (using just Docker)
 - git
 - vim
 - haskell
+- node 8
 
 ### How to use
 
