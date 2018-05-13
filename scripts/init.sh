@@ -14,9 +14,7 @@ git clone https://github.com/andreformento/linux-local-configs.git ~/linux-local
 cd ~/linux-local-configs
 ./init.sh
 
-# tmux
-apt install -y tmux
-
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh" && exec "$@"
 
 echo "ok"
+#
