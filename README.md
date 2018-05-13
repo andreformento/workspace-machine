@@ -28,4 +28,6 @@ cat /root/.ssh/id_rsa.pub
 And go to the [Github](https://github.com/settings/keys) and add a new key.
 
 ### References
-- http://fideloper.com/mac-vim-tmux
+
+- [Split Terminal Windows Easily](https://lukaszwrobel.pl/blog/tmux-tutorial-split-terminal-windows-easily/)
+- [Vim and Tmux on your Mac](http://fideloper.com/mac-vim-tmux)
