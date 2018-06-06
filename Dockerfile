@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 LABEL maintainer="andreformento.sc@gmail.com"
 
 RUN apt-get update && apt-get install -y \
@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     zsh \
     haskell-platform \
     tmux \
+    nodejs \
     && \
     chsh -s $(which zsh)
 
@@ -24,16 +25,12 @@ RUN set -x \
     && echo "sdkman_auto_selfupdate=false" >> $SDKMAN_DIR/etc/config \
     && echo "sdkman_insecure_ssl=false" >> $SDKMAN_DIR/etc/config
 
-# node
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - \
-    && apt-get install -y nodejs
-
 ENV HOME /home
 ENV DEV $HOME/dev
 
-ADD dev/ $DEV/
-ADD scripts/ $HOME/scripts/
-ADD ssh/ $HOME/.ssh/
+COPY dev/ $DEV/
+COPY scripts/ $HOME/scripts/
+COPY ssh/ $HOME/.ssh/
 WORKDIR $DEV
 RUN $HOME/scripts/init.sh
 
