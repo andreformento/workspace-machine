@@ -16,5 +16,6 @@ cd ~/linux-local-configs
 
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh" && exec "$@"
 
+sdk install java 10.0.1-zulu
+
 echo "ok"
-#
