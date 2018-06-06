@@ -9,13 +9,11 @@ My local machine everywhere (using just Docker)
 - vim
 - haskell
 - node 8
+- java 10
 
 ### How to use
 
-#### Build your own image _(optional)_:
-You can build an image with `docker-compose build`.
-It is optional because if you do not build you will use a ready image hosted
-at [dockerhub](https://hub.docker.com/r/andreformento/workspace-machine).
+You have 2 options:
 
 #### Run an have fun
 You can just run `./start.sh` at host and, inside the docker, run:
@@ -26,6 +24,11 @@ cat /root/.ssh/id_rsa.pub
 ```
 
 And go to the [Github](https://github.com/settings/keys) and add a new key.
+
+#### Build your own image:
+You can build and run an image with `docker-compose up --build`.
+It is optional because if you do not build you will use a ready image hosted
+at [dockerhub](https://hub.docker.com/r/andreformento/workspace-machine).
 
 ### References
 
