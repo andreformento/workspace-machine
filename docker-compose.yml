@@ -12,4 +12,5 @@ services:
       - ./ssh:/root/.ssh
     entrypoint: /bin/zsh
     ports:
-      - "9778:9778" # node -> elo7/tech-blog
+      - "9778:9778" # application
+      - "9779:9779" # debug
