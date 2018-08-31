@@ -10,6 +10,7 @@ My local machine everywhere (using just Docker)
 - haskell
 - node 8
 - java 10
+- clojure
 
 ### How to use
 
